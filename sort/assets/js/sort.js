@@ -84,7 +84,7 @@ $('.twitup').click(function() {
   var s, url;
   var res1 = encodeURI(twittext);
   s = res1;
-  url = 'https://standingwater.github.io/sort/sort.html';
+  url = location.href;
 
   if (twittext != "") {
     if (twittext.length > 140) {
