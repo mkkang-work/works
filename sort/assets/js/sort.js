@@ -476,7 +476,7 @@ function sortList(flag){
   console.log(cmp1);
 
   if (cmp1<0) {
-    str = "総"+namMember.length+"名 / Battle played "+(numQuestion-1)+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
+    str = "総"+namMember.length+"個 / Battle played "+(numQuestion-1)+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
     document.getElementById("battleNumber").innerHTML = str;
 
     showResult();
@@ -498,11 +498,11 @@ function showResult() {
   cateArray();
   cateName = cateArray();
   if(!Array.isArray(cateName)){
-    catetitle = '['+cateName+'/'+namMember.length+'名]';
+    catetitle = '['+cateName+'/'+namMember.length+'個]';
   }else if(specialSelectName){
-    catetitle = '['+specialSelectName+'/'+namMember.length+'名]';
+    catetitle = '['+specialSelectName+'/'+namMember.length+'個]';
   }else {
-    catetitle = "総"+namMember.length+"名 / ";
+    catetitle = "総"+namMember.length+"個 / ";
   }
 
   var ranking = 1;
@@ -511,7 +511,7 @@ function showResult() {
   var i;
   var res1;
   ttl =  "♦のキャラソート"+catetitle+"　ソート結果";
-  twittext =  "♦のキャラソート"+catetitle+"　ソート結果(上位10名まで)\n";
+  twittext =  "♦のキャラソート"+catetitle+"　ソート結果(上位10個まで)\n";
 
   for (i=0; i<namMember.length; i++) {
 
@@ -566,11 +566,11 @@ function showImage() {
   cateArray();
   cateName = cateArray();
   if(!Array.isArray(cateName)){
-    catetitle = '['+cateName+'/'+namMember.length+'名]';
+    catetitle = '['+cateName+'/'+namMember.length+'個]';
   }else if(specialSelectName){
-    catetitle = '['+specialSelectName+'/'+namMember.length+'名]';
+    catetitle = '['+specialSelectName+'/'+namMember.length+'個]';
   }else {
-    catetitle = "総"+namMember.length+"名 / ";
+    catetitle = "総"+namMember.length+"個 / ";
   }
 
   var str0 = catetitle + "Battle No."+(numQuestion)+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
